@@ -1,4 +1,9 @@
+setTimeout(function() { $('#loader').fadeOut('slow', function() { $('#content').fadeIn('slow'); }); }, 5000);
+
 $(document).ready(function() {
+    //loader
+    
+    
     // Function to check if an element is in viewport
     function isElementInViewport(el) {
         var rect = el.getBoundingClientRect();
@@ -14,12 +19,7 @@ $(document).ready(function() {
     function revealOnScroll() {
         $('.hidden').each(function() {
         
-            if (isElementInViewport(this)) {
-                $(this).animate({ opacity: 1, right: "-=50" }, 1000);
-                $(this).animate({ opacity: 1, right: "-=0" }, 1000);
-               
-             
-            }
+            $(window).on('scroll', function() { $('.hidden').each(function() { var elementTop = $(this).offset().top; var viewportBottom = $(window).scrollTop() + $(window).height(); if (elementTop < viewportBottom) { $(this).addClass('visible'); } else { $(this).removeClass('visible'); } }); });
         });
     }
 
