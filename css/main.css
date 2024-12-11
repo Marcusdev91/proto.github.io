@@ -1,0 +1,65 @@
+header{
+    width:100vw;background-image: url(../images/splash.png);height: 100vh;
+    background-repeat: no-repeat; background-size: cover;
+    background-position-y: -40%;
+
+    font-family: "Signika Negative", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+
+
+}
+
+.btn-primary{
+background-color:#e6d04f ;
+border: none;
+}
+
+h1,h2{
+font-family: "Signika Negative", sans-serif;
+}
+
+#SVGevents{
+
+ position: absolute;
+  background-repeat: no-repeat;
+
+ 
+  z-index: -1;
+
+}
+
+
+
+
+a:focus{
+    border-bottom: 1px;
+    border-color: #e6d04f;
+    border-style: solid;
+}
+a:target{
+  
+    border-bottom: 1px;
+    border-color: #e6d04f;
+    border-style: solid;
+
+}
+
+.card{
+  box-shadow: 0px 5px 5px rgba(0,0,0, 0.3);
+  border-radius: 10px;
+}
+
+#loader {
+
+  margin-top: 50vh;
+z-index: 9999;
+}
+
+
+.hidden { opacity: 0; transform: translateY(40px); transition: opacity 0.1s ease-out, transform 1s} 
+.visible{opacity: 1; transform: translateY(0);}
+
+#staff:nth-child(3){color: red;}
+
