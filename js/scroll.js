@@ -19,7 +19,7 @@ $(document).ready(function() {
     function revealOnScroll() {
         $('.hidden').each(function() {
         
-            $(window).on('scroll', function() { $('.hidden').each(function() { var elementTop = $(this).offset().top; var viewportBottom = $(window).scrollTop() + $(window).height(); if (elementTop < viewportBottom) { $(this).addClass('visible'); } else { $(this).removeClass('visible'); } }); });
+            $(window).on('scroll', function() { $('.hidden').each(function() { var elementTop = $(this).offset().top; var viewportBottom = $(window).scrollTop() + $(window).height(); if (elementTop < viewportBottom) { $(this).addClass('visible'); } }); });
         });
     }
 
