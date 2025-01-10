@@ -1,7 +1,9 @@
 header{
-    width:100vw;background-image: url(../images/splash.png);height: 100vh;
+    width:100vw;background-image: url(../images/splash.png);
+    height: 100vh;
     background-repeat: no-repeat; background-size: cover;
-    background-position-y: -40%;
+    background-position-y: 100px;
+  
 
     font-family: "Signika Negative", sans-serif;
 font-optical-sizing: auto;
@@ -62,4 +64,30 @@ z-index: 9999;
 .visible{opacity: 1; transform: translateY(0);}
 
 #staff:nth-child(3){color: red;}
+
+/* Default image size */
+
+
+/* For devices with a max width of 600px */
+@media (max-width: 600px) {
+
+}
+
+/* For devices with a min width of 600px and max width of 1200px */
+@media (min-width: 600px) and (max-width: 1200px) {
+  header{
+   
+    background-position-y: 120px;
+    
+  }
+
+}
+
+/* For devices with a min width of 1200px */
+@media (min-width: 1200px) {
+
+}
+
+
+
 
